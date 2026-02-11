@@ -1,0 +1,149 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f7ff;
+  color: #1f2a44;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: linear-gradient(135deg, #2b63ff, #5f87ff);
+  color: #fff;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero p {
+  margin-top: 0.5rem;
+  opacity: 0.95;
+}
+
+.layout {
+  width: min(1100px, 92%);
+  margin: -1.5rem auto 2rem;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 28px rgba(24, 44, 92, 0.12);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 0.9rem;
+  font-weight: 600;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  font: inherit;
+}
+
+input,
+textarea {
+  margin-top: 0.35rem;
+  padding: 0.75rem;
+  border: 1px solid #ccd8ff;
+  border-radius: 8px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  background: #2b63ff;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #174ee6;
+}
+
+.posts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.ghost {
+  width: auto;
+  margin-top: 0;
+  padding: 0.45rem 0.75rem;
+  background: #eef3ff;
+  color: #2b63ff;
+}
+
+.ghost:hover {
+  background: #dde7ff;
+}
+
+.posts {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.post {
+  border: 1px solid #e2eaff;
+  border-radius: 10px;
+  padding: 0.9rem;
+  background: #fbfcff;
+}
+
+.post-title {
+  margin: 0;
+}
+
+.meta {
+  margin-top: 0.25rem;
+  color: #586581;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.post-content {
+  margin: 0.65rem 0 0;
+  white-space: pre-wrap;
+}
+
+.empty {
+  color: #6c7893;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogBoard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>BlogBoard</h1>
+    <p>Create and publish your blog posts instantly.</p>
+  </header>
+
+  <main class="layout">
+    <section class="card">
+      <h2>Write a New Post</h2>
+      <form id="blog-form">
+        <label for="title">Title</label>
+        <input id="title" name="title" type="text" placeholder="Enter your blog title" required maxlength="100" />
+
+        <label for="author">Author</label>
+        <input id="author" name="author" type="text" placeholder="Your name" required maxlength="40" />
+
+        <label for="content">Content</label>
+        <textarea id="content" name="content" rows="6" placeholder="Write your blog content here..." required></textarea>
+
+        <button type="submit">Publish Post</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="posts-header">
+        <h2>Published Blogs</h2>
+        <button id="clear-posts" class="ghost" type="button">Clear All</button>
+      </div>
+      <div id="posts" class="posts"></div>
+      <p id="empty-state" class="empty">No blogs yet. Publish your first post!</p>
+    </section>
+  </main>
+
+  <template id="post-template">
+    <article class="post">
+      <h3 class="post-title"></h3>
+      <div class="meta">
+        <span class="post-author"></span>
+        <span>•</span>
+        <time class="post-date"></time>
+      </div>
+      <p class="post-content"></p>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
